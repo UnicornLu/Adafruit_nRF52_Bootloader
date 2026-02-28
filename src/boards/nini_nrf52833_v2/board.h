@@ -30,7 +30,7 @@
 /*------------------------------------------------------------------*/
 /* LED
  *------------------------------------------------------------------*/
-//#define LEDS_NUMBER       1
+#define LEDS_NUMBER       0
 //#define LED_PRIMARY_PIN   _PINNUM(0, 4) // Blue
 //#define LED_STATE_ON      1
 
