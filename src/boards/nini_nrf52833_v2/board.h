@@ -25,6 +25,8 @@
 #ifndef _NINI_NRF52833_H
 #define _NINI_NRF52833_H
 
+#define UICR_REGOUT0_VALUE UICR_REGOUT0_VOUT_2V7
+
 #define _PINNUM(port, pin)    ((port)*32 + (pin))
 
 /*------------------------------------------------------------------*/
