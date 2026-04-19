@@ -25,25 +25,26 @@
 #ifndef _NINI_NRF52833_H
 #define _NINI_NRF52833_H
 
+#define UICR_REGOUT0_VALUE UICR_REGOUT0_VOUT_2V7
+
 #define _PINNUM(port, pin)    ((port)*32 + (pin))
 
 /*------------------------------------------------------------------*/
 /* LED
  *------------------------------------------------------------------*/
-#define LEDS_NUMBER       0
-//#define LED_PRIMARY_PIN   _PINNUM(0, 4) // Blue
-//#define LED_STATE_ON      1
+#define LEDS_NUMBER       3
+#define LED_PRIMARY_PIN   _PINNUM(0, 30) // red
+#define LED_SECONDARY_PIN _PINNUM(0, 28) // green
+#define LED_THIRDARY_PIN _PINNUM(0, 29) // blue
+#define LED_STATE_ON      0
 
-#define LED_NEOPIXEL          _PINNUM(0, 30)
-#define NEOPIXELS_NUMBER      1
-#define BOARD_RGB_BRIGHTNESS  0x040404
 
 /*------------------------------------------------------------------*/
 /* BUTTON
  *------------------------------------------------------------------*/
  #define BUTTONS_NUMBER        2
- #define BUTTON_1              _PINNUM(0, 29)
- #define BUTTON_2              _PINNUM(0, 18)   // same as BUTTON_1
+ #define BUTTON_DFU             _PINNUM(0, 18)
+ #define BUTTON_DFU_OTA         _PINNUM(0, 29)
  #define BUTTON_PULL           NRF_GPIO_PIN_PULLUP
  
 
