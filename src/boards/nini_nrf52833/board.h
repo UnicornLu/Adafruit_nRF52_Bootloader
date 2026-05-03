@@ -25,6 +25,8 @@
 #ifndef _NINI_NRF52833_H
 #define _NINI_NRF52833_H
 
+#define UICR_REGOUT0_VALUE UICR_REGOUT0_VOUT_3V3
+
 #define _PINNUM(port, pin)    ((port)*32 + (pin))
 
 /*------------------------------------------------------------------*/
@@ -42,8 +44,8 @@
 /* BUTTON
  *------------------------------------------------------------------*/
  #define BUTTONS_NUMBER        2
- #define BUTTON_1              _PINNUM(0, 18)
- #define BUTTON_2              _PINNUM(0, 11)   // same as BUTTON_1
+ #define BUTTON_DFU              _PINNUM(0, 18)
+ #define BUTTON_DFU_OTA         _PINNUM(0, 11)   
  #define BUTTON_PULL           NRF_GPIO_PIN_PULLUP
  
 

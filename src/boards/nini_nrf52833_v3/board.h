@@ -33,8 +33,8 @@
 /* LED
  *------------------------------------------------------------------*/
 #define LEDS_NUMBER       2
-#define LED_PRIMARY_PIN   _PINNUM(0, 11) // Blue
-#define LED_SECONDARY_PIN _PINNUM(0, 15) // Green
+#define LED_PRIMARY_PIN   _PINNUM(0, 9) // Blue
+#define LED_SECONDARY_PIN _PINNUM(0, 20) // Green
 #define LED_STATE_ON      1
 
 //#define LED_NEOPIXEL          _PINNUM(0, 20)
@@ -46,7 +46,7 @@
  *------------------------------------------------------------------*/
  #define BUTTONS_NUMBER        2
  #define BUTTON_DFU              _PINNUM(0, 18)
- #define BUTTON_DFU_OTA         _PINNUM(0, 20) 
+ #define BUTTON_DFU_OTA         _PINNUM(0, 4) 
  #define BUTTON_PULL           NRF_GPIO_PIN_PULLUP
  
 
